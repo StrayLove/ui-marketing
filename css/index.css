@@ -1,0 +1,408 @@
+@font-face{
+    font-family: 'FontName';
+    src: url('Avara-webfont..eot');
+    src: url('Avara-webfont..eot?#iefix') format('embedded-opentype'),
+        url('Avara-webfont.woff') format('woff'),
+        url('Avara-webfont.ttf') format('truetype'),
+        url('Avara-webfont.svg#FontName') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body,
+html{
+  font-family: 'FontName', sans-serif;
+  color: black;
+  font-size: 62.5%;
+  background-size: cover;
+  background-image: url(img/spices.jpg); 
+  background-repeat: no-repeat;
+  opacity: 70%;
+}
+
+@media (max-width: 500px){
+    body,
+    html{
+      margin-right: 5px;
+      margin-left: 5px;
+}
+  }
+
+  h1,h2,h3,h4,h5,
+  .navbtn{
+    font-family: 'FontName', cursive;
+    color: black;
+}
+
+h1{
+    font-size: 12rem;
+    padding-bottom: 2rem;
+    padding-top: 3rem;
+    font-weight: bold;
+}
+
+@media (max-width: 500px){
+    h1{
+      font-size: 7rem;
+    }
+  }
+
+@media (max-width: 800px){
+    h1{
+      font-size: 12rem;
+      text-align: center;
+    }
+  }
+
+  h2{
+    font-size: 4.5rem;
+  }
+
+  @media (max-width: 800px){
+    h2{
+      font-size: 8rem;
+    }
+  }
+
+  @media (max-width: 500px){
+    h2{
+      width: 75%;
+      text-align: center;
+    }
+  }
+
+  h3{
+    font-size: 3.5rem;
+  }
+
+  p{
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+
+  @media (max-width: 800px){
+    p{
+      width: 85%;
+      margin: 20px auto;
+    }
+  }
+
+  .overlay{
+    height: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(21, 124, 44, 0.541);
+    background-color: rgba(69, 89, 202, 0.555);
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .overlay a{
+    padding: 0;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: flex;
+    flex-direction: row;
+    transition: 0.3s;
+  }
+
+  span{
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+  }
+
+  .overlay a:focus,
+  .overlay a:hover {
+    color: #f1f1f1;
+  }
+
+  .overlay .closebtn{
+    position: absolute;
+    top: 2px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  @media (max-width: 500px){
+    .overlay{
+      overflow-y: auto;
+    }
+    .overlay a{
+      font-size: 20px;
+    }
+    .overlay .closebtn{
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+
+  .navbtn{
+    margin-top: 40px;
+  }
+
+  footer{
+    display: flex;
+    justify-content: center;
+  }
+
+  .fa{
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    color: black;
+  }
+
+  a{
+    font-size: 2rem;
+    padding-right: 2rem;
+    text-decoration: none;
+    color: rgba(108, 22, 129, 0.5);
+  }
+
+  @media (max-width: 500px){
+    a{
+      padding: 5px;
+      margin-right: 40px;
+      font-size: 3rem;
+    }
+  }
+
+  @media (max-width: 800px){
+    a{
+      margin-left: 20px;
+      padding: 5px;
+      font-size: 2.5rem;
+    }
+  }
+
+  .navBox{
+    display: flex;
+    justify-content: center;
+    padding-right: 8rem;
+    margin-top: 18px;
+  }
+
+  @media (max-width: 500px){
+    .navBox{
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 800px){
+    .navBox {
+      margin-top: 6rem;
+    }
+  }
+
+  .midPageTxt,
+  h1,
+  p{
+    display: flex;
+    justify-content: center;
+  }
+
+  .h1Mission{
+    border-bottom: 1.5px solid #7B3D4C;
+    padding-bottom: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .midPageTxt{
+    border-top: 1.5px solid #7B3D4C;
+    padding-top: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .artsBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  @media (max-width: 500px) {
+    .artsBox {
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .artsBox{
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+  }
+
+  .access{
+    width: 35rem;
+    height: auto;
+  }
+
+  @media (max-width: 800px){
+    .access{
+      width: 75%;
+    }
+  }
+
+
+  @media (max-width: 500px){
+    .access img {
+      margin: 10px auto;
+    }
+  }
+
+  img{
+    width: 100%;
+    border-radius: 23px;
+  }
+
+  h3{
+    width: 103%;
+    margin: 10px;
+    text-align: center;
+  }
+
+  @media (max-width: 500px){
+    h3{
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+  }
+
+  @media (max-width: 800px){
+    h3{
+      margin-top: 20px;
+      margin-bottom: 10px;
+      text-align: center;
+      font-size: 6rem;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 500px){
+    h3{
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+  }
+
+  @media (max-width: 800px){
+    h3{
+      margin-top: 20px;
+      margin-bottom: 10px;
+      text-align: center;
+      font-size: 6rem;
+    }
+  }
+
+  .btn-center{
+    display: flex;
+    justify-content: center;
+  }
+
+  button{
+    border-radius: 1rem;
+    font-size: 2rem;
+    width: 50%;
+    background-color: #919A87;
+    color: white;
+    height: 6rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+
+  .btn-center a{
+    color: white;
+    text-decoration: none;
+    margin: 0;
+  }
+
+  .fullImgTxt{
+    position: relative;
+    text-align: center;
+    color: white;
+    border-top: 1.5px solid #7B3D4C;
+    padding-top: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  @media (max-width: 500px){
+    .fullImgTxt {
+      height: 260px;
+    }
+  }
+
+  .imgText{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media (max-width: 500px){
+    .imgText {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 800px){
+    .imgText{
+      height: 100px;
+      width: 80%;
+    }
+  }
+
+  .imgText h2{
+    color: #F0EADF;
+    text-shadow: 2px 2px #000000;
+    text-shadow: 3px 2px #000000;
+    font-size: 11.5rem;
+  }
+
+  @media (max-width: 500px){
+    .imgText h2{
+      font-size: 6rem;
+      width: 100%;
+      margin-top: 3rem;
+    }
+  }
+
+  @media (max-width: 320px){
+    .imgText h2 {
+      font-size: 5rem;
+      text-align: center;
+      margin: 0;
+    }
+  }
+  
