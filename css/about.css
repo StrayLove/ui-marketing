@@ -1,0 +1,296 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*BOXES*/
+.middle-content .boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.middle-content .boxes .box{
+    width: 12.5%;
+    height: 100px;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+h1, h2, h3, h4, h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: 'Rubik', sans-serif;
+}
+
+p{
+    line-height: 1.4;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.top-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.top-content .text-container {
+    width: 48%;
+    padding: 0 1%;
+    padding-bottom: 20px;
+}
+
+.middle-content {
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.middle-content h2 {
+    padding: 0 2%;
+    margin-bottom: 0;
+}
+
+.bottom-content{
+    display: flex;
+    margin: 0 2% 20px;
+    justify-content: space-around;
+}
+
+.bottom-content .text-container{
+    padding-right: 4%;
+}
+
+.bottom-content .text-container:last-child 
+    padding-right: 0;
+}
+
+footer{
+    width: 100%;
+    background: black;
+}
+
+footer nav{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    font-size: 14px;
+
+}
+
+footer nav a{
+    background: black;
+    text-decoration: none;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 2.3em;
+}
+
+header p, header h2{
+    margin: 25px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: black;
+}
+
+header nav a:hover{
+  color: green;
+}
+
+button{
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    border-radius: 10px;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+button:hover{
+    background-color: black;
+    color: green;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.col{
+    flex-direction: column;
+}
+
+section{
+    padding: 2em;
+}
+
+.row section{
+    border-bottom: 2px dashed black;
+    margin: 12px;
+}
+
+header section{
+    border-bottom: 2px dashed black;
+}
+
+
+@keyframes slidein {
+	0% {transform: translateX(-700px);}
+	100% {transform: translateX(0px); }
+}
+
+
+@keyframes slidein2 {
+	0%{transform: translateX(700px);}
+	100%{transform: translateX(0px);}
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+.middle-content .boxes .box1{
+    background: teal;
+    display: 2;
+	animation: spin;
+	animation-duration: 3s;
+}
+
+.middle-content .boxes .box2{
+    background: gold;
+    display: 2;
+	animation: spin;
+	animation-duration: 3s;
+}
+
+
+.middle-content .boxes .box3{
+    background: cadetblue;
+    display: 2;
+	animation: spin;
+	animation-duration: 3s;
+}
+
+.middle-content .boxes .box4{
+    background: coral;
+    display: 2;
+	animation: slidein2;
+	animation-duration: 3s;
+}
+
+.middle-content .boxes .box5{
+    background: crimson;
+    display: 2;
+	animation: spin;
+	animation-duration: 3s;
+}
+
+.middle-content .boxes .box6{
+    background: forestgreen;
+    display: 2;
+	animation: slidein2;
+	animation-duration: 3s;
+}
+
+.middle-content .boxes .box7{
+    background: darkorchid;
+    display: 2;
+	animation: spin;
+	animation-duration: 3s;
+}
+
+.middle-content .boxes .box8{
+    background: hotpink;
+    display: 2;
+	animation: slidein2;
+	animation-duration: 3s;
+    
+}
+
+.middle-content .boxes .box9{
+    background: indigo;
+    display: 2;
+	animation: spin;
+	animation-duration: 3s;
+}
+
+.middle-content .boxes .box10{
+    background: dodgerblue;
+    display: 2;
+	animation: slidein2;
+	animation-duration: 3s;
+}
