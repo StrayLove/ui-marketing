@@ -1,0 +1,243 @@
+@color_1: @color_1;
+@color_2: @color_2;
+@color_3: @color_3;
+@font_family_1: @font_family_1;
+@background_color_1: @background_color_1;
+
+/*BOXES*/
+@keyframes slidein2 {
+	0% {
+		transform: translateX(700px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+@color_1 {
+	&: { white;
+	{ @color_2 { &: { black;
+	{ @color_3 { &: { green;
+	{ @font_family_1 { &: { 'Yeon Sung' { 0% { transform: translateX(-700px);
+}
+} {
+	} {
+		} {
+			} {
+				} {
+					} {
+						} {
+							} {
+								} {
+									} {
+										} {
+											sans-serif; {
+												@background_color_1 { &: { white;
+												{ @background_color_2 { &: { black;
+												{ @keyframes { slidein { 0% { transform: translateX(-700px);
+											}
+										}
+									}
+								}
+								100% {
+									transform: translateX(0px);
+								}
+								h1 {
+									font-size: 18px;
+									margin-bottom: 15px;
+									font-family: @font_family_1;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	margin-bottom { &: { 20px;
+	{ border-bottom { &: { 1px { dashed { black;
+	{ h2 { padding: 0 2%;
+	margin-bottom: 0;
+	footer { width: 100%;
+	background: black;
+	nav { width: 60%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 2%;
+	font-size: 14px;
+	a { background: black;
+	text-decoration: none;
+	button {
+		background-color: @background_color_1;
+		border: 2px solid black;
+		color: @color_2;
+		border-radius: 10px;
+		padding: 12px 28px;
+		text-align: center;
+		text-decoration: none;
+		outline: none;
+		-webkit-transition-duration: 0.4s;
+		transition-duration: 0.4s;
+		&: hover { background-color: @background_color_2;
+		color: @color_3;
+	}
+	h2 {
+		font-size: 18px;
+		margin-bottom: 15px;
+		font-family: @font_family_1;
+		margin: 25px;
+	}
+}
+* {
+	box-sizing: border-box;
+}
+html {
+	height: 100%;
+	font-family: @font_family_1;
+}
+body {
+	height: 100%;
+	font-family: @font_family_1;
+}
+.middle-content {
+	.boxes { display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	.box { width: 12.5%;
+	height: 100px;
+	margin: 20px 2.5%;
+	color: @color_1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.box1 {
+	background: teal;
+	display: 2;
+	animation: spin;
+	animation-duration: 3s;
+}
+.box2 {
+	background: gold;
+	display: 2;
+	animation: spin;
+	animation-duration: 3s;
+}
+.box3 {
+	background: cadetblue;
+	display: 2;
+	animation: spin;
+	animation-duration: 3s;
+}
+.box4 {
+	background: coral;
+	display: 2;
+	animation: slidein2;
+	animation-duration: 3s;
+}
+.box5 {
+	background: crimson;
+	display: 2;
+	animation: spin;
+	animation-duration: 3s;
+}
+.box6 {
+	background: forestgreen;
+	display: 2;
+	animation: slidein2;
+	animation-duration: 3s;
+}
+.box7 {
+	background: darkorchid;
+	display: 2;
+	animation: spin;
+	animation-duration: 3s;
+}
+.box8 {
+	background: hotpink;
+	display: 2;
+	animation: slidein2;
+	animation-duration: 3s;
+}
+.box9 {
+	background: indigo;
+	display: 2;
+	animation: spin;
+	animation-duration: 3s;
+}
+.box10 {
+	background: dodgerblue;
+	display: 2;
+	animation: slidein2;
+	animation-duration: 3s;
+}
+.bottom-content {
+	display: flex;
+	margin: 0 2% 20px;
+	justify-content: space-around;
+	.text-container { padding-right: 4%;
+	&: last-child { padding-right: 0;
+}
+header {
+	nav { display: flex;
+	justify-content: space-around;
+	align-items: baseline;
+	padding: 2.3em;
+	a { text-decoration: none;
+	color: @color_2;
+	&: hover { color: @color_3;
+}
+p {
+	margin: 25px;
+	line-height: 1.4;
+}
+.row {
+	display: flex;
+	flex-direction: row;
+	section { border-bottom: 2px dashed black;
+	margin: 12px;
+}
+.col {
+	flex-direction: column;
+}
+h3 {
+	font-size: 18px;
+	margin-bottom: 15px;
+	font-family: @font_family_1;
+}
+h4 {
+	font-size: 18px;
+	margin-bottom: 15px;
+	font-family: @font_family_1;
+}
+h5 {
+	font-size: 18px;
+	margin-bottom: 15px;
+	font-family: @font_family_1;
+}
+.container {
+	width: 800px;
+	margin: 0 auto;
+}
+.top-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-bottom: 20px;
+	border-bottom: 1px dashed black;
+	.text-container { width: 48%;
+	padding: 0 1%;
+	padding-bottom: 20px;
+}
+section {
+	border-bottom: 2px dashed black;
+	padding: 2em;
+}
