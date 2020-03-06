@@ -1,3 +1,58 @@
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.bounce {
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes jello {
+  from,
+  11.1%,
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+  22.2% {
+    transform: skewX(-12.5deg) skewY(-12.5deg);
+  }
+  33.3% {
+    transform: skewX(6.25deg) skewY(6.25deg);
+  }
+  44.4% {
+    transform: skewX(-3.125deg) skewY(-3.125deg);
+  }
+  55.5% {
+    transform: skewX(1.5625deg) skewY(1.5625deg);
+  }
+  66.6% {
+    transform: skewX(-0.78125deg) skewY(-0.78125deg);
+  }
+  77.7% {
+    transform: skewX(0.390625deg) skewY(0.390625deg);
+  }
+  88.8% {
+    transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+  }
+}
+.jello {
+  animation-name: jello;
+  transform-origin: center;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
 .navigationator {
   font-size: 15px;
   font-family: #454A59;
@@ -8,6 +63,111 @@
 .noneya {
   display: none;
 }
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.bounce {
+  -webkit-animation-name: bounce;
+  -moz-animation-name: bounce;
+  -o-animation-name: bounce;
+  animation-name: bounce;
+}
+/*
+.keyframes(@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+	@keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	animation: @arguments;
+}
+
+.slidein {
+	
+	.keyframes(slidein;{
+		0% { transform: translate(700px); }
+		100% { transform: translate(0px); }
+		});
+
+	.animation(slidin 3s linear 1s infinite alternate)
+
+}
+
+/*.keyframes(@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+	@keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	animation: @arguments;
+}
+
+
+.keyframe-mixin-spin {
+  
+  .keyframes(spin;{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+  });
+	.animation(spin 3s linear infinite alternate)
+}
+
+.keyframes(@name; @params) {
+	@-moz-keyframes @name { @params(); }
+	@-webkit-keyframes @name { @params(); }
+	@keyframes @name { @params(); }
+}
+
+.animation(@params) {
+	-webkit-animation: @params;
+	-moz-animation: @params;
+	animation: @params;
+}
+
+.keyframe-mixin-slidein {
+  
+    .keyframes(slidein;{
+      0%{transform: translateX(700px);}
+      100%{transform: translateX(0px);}
+    });
+    
+      .animation(slidein 3s linear infinite alternate)
+  
+  }*/
+/*.animation (@params) {
+    -webkit-animation:@params;
+       -moz-animation:@params;
+            animation:@params;
+  }
+  
+   
+  .spin {
+    .animation(spin @spinSpeed infinite linear);
+  
+    @-webkit-keyframes spin {
+      to { -webkit-transform: rotate(360deg); } }
+    @-moz-keyframes spin {
+      to { -moz-transform: rotate(360deg); } }
+    }
+    */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -175,7 +335,7 @@ p {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  max-width: 100%px;
+  max-width: 100%;
   margin-top: 20px;
   background-color: #F6F6F6;
 }
@@ -222,12 +382,12 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.home .lemon-head .lemon {
+.home .lemon-head .lemons {
   border-radius: 10px;
   width: 100%;
 }
 @media (max-width: 500px) {
-  .home .lemon-head .lemon {
+  .home .lemon-head .lemons {
     width: 100%;
   }
 }
@@ -276,6 +436,9 @@ footer {
 }
 .home p {
   margin-top: 13px;
+}
+.home h2 {
+  margin-top: 40px;
 }
 .memory {
   margin-top: 60px;
@@ -341,4 +504,162 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.bottom-content {
+  display: flex;
+  margin: 0 2% 20px;
+  justify-content: space-around;
+}
+.bottom-content .text-container {
+  padding-right: 4%;
+}
+.bottom-content .text-container .text-container:last-child {
+  padding-right: 0;
+}
+.top-img {
+  width: 800px;
+  height: 100px;
+}
+.middle-content {
+  margin-bottom: 20px;
+  border-bottom: 1px dashed black;
+}
+.middle-content h2 {
+  padding: 0 2%;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+.middle-content h2 .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.middle-content h2 .boxes .box {
+  width: 12.5%;
+  height: 100px;
+  margin: 20px 2.5%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-family: 'Yeon Sung', sans-serif;
+}
+p {
+  line-height: 1.4;
+}
+.middle-content {
+  border-bottom: 1px dashed black;
+  margin-bottom: 20px;
+}
+.middle-content .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.middle-content .boxes .box {
+  align-items: center;
+  color: white;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  margin: 20px 2.5%;
+  width: 12.5%;
+}
+.middle-content .boxes .box1 {
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: bounce;
+  -moz-animation-name: bounce;
+  -o-animation-name: bounce;
+  animation-name: bounce;
+  background: teal;
+}
+.middle-content .boxes .box2 {
+  animation-name: jello;
+  transform-origin: center;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  background: gold;
+}
+.middle-content .boxes .box3 {
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: bounce;
+  -moz-animation-name: bounce;
+  -o-animation-name: bounce;
+  animation-name: bounce;
+  background: cadetblue;
+}
+.middle-content .boxes .box4 {
+  animation-name: jello;
+  transform-origin: center;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  background: coral;
+}
+.middle-content .boxes .box5 {
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: bounce;
+  -moz-animation-name: bounce;
+  -o-animation-name: bounce;
+  animation-name: bounce;
+  background: crimson;
+}
+.middle-content .boxes .box6 {
+  animation-name: jello;
+  transform-origin: center;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  background: forestgreen;
+}
+.middle-content .boxes .box7 {
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: bounce;
+  -moz-animation-name: bounce;
+  -o-animation-name: bounce;
+  animation-name: bounce;
+  background: darkorchid;
+}
+.middle-content .boxes .box8 {
+  animation-name: jello;
+  transform-origin: center;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  background: hotpink;
+}
+.middle-content .boxes .box9 {
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: bounce;
+  -moz-animation-name: bounce;
+  -o-animation-name: bounce;
+  animation-name: bounce;
+  background: indigo;
+}
+.middle-content .boxes .box10 {
+  animation-name: jello;
+  transform-origin: center;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  background: dodgerblue;
 }
